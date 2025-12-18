@@ -33,11 +33,29 @@
         }
         .main-container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             padding: 20px;
+            gap: 20px;
+        }
+        .content-left, .content {
+            width: 100%; 
         }
         .content-left, .content {
             width: 50%;
+        }
+        @media (min-width: 768px) {
+            .main-container {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .content-left, .content {
+                width: 48%;
+            }
+        }
+        a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            background-color: rgb(255, 255, 255);
         }
     </style>
 </head>
@@ -45,7 +63,7 @@
     <h1><b>MY NAME IS BILLA</b></h1>
     <div class="main-container">  
         <div class="content-left"> 
-            <p> <b>Billa</b> is a 2009 Telugu action thriller starring Prabhas in a dual role as a ruthless international gangster and a simpleton lookalike. Directed by Meher Ramesh, it is a remake of the 1978 Hindi classic Don and the 2007 Tamil film of the same name. The movie is celebrated for its high production values and for showcasing Prabhas in an incredibly stylish and sophisticated avatar. Set primarily in Malaysia, the plot follows an undercover police mission to replace the deceased underworld don with his double. The film features a strong supporting cast, including Anushka Shetty and Namitha, who added glamour and depth to the high-stakes narrative.</p>
+            <p> <b><a href="Billa.html">Billa</a></b> is a 2009 Telugu action thriller starring Prabhas in a dual role as a ruthless international gangster and a simpleton lookalike. Directed by Meher Ramesh, it is a remake of the 1978 Hindi classic Don and the 2007 Tamil film of the same name. The movie is celebrated for its high production values and for showcasing Prabhas in an incredibly stylish and sophisticated avatar. Set primarily in Malaysia, the plot follows an undercover police mission to replace the deceased underworld don with his double. The film features a strong supporting cast, including Anushka Shetty and Namitha, who added glamour and depth to the high-stakes narrative.</p>
             <h2>B for billa</h2>
             <h3>J for jilla</h3>
             <h4>D for dolla</h4>
@@ -54,22 +72,11 @@
             <img src="billa.jpg" alt="Billa Image" style="display: block; margin: 20px auto; max-width: 100%; height: auto;">   
         </div>
         <div class="content">
-            <p>Nenunde Stylaa ilaa... Yedigaane neyanthala... Yevaraina salaam aneyla... Adugadugu Okela... Nadavanuga yevela... Yevaru nanu Oohinchela...
-
-Ne vala visirithe vila vila... Ne nala kadilithe hala gula...
-
+            <p>Nenunde Stylaa ilaa... Yedigaane neyanthala... Yevaraina salaam aneyla... Adugadugu Okela... Nadavanuga yevela... Yevaru nanu Oohinchela...Ne vala visirithe vila vila... Ne nala kadilithe hala gula...
 Chorus: My Name is Billa, B for Billa... Okate sainyam la vachhanilla... My Name is Billa, Bijili Billa... Merupe Manishaithe vuntaadila...
-
 Enemy yevvadaina... Yamudini nenenanta... Paathaalamlo paathestha... Na kadam piduguku chali jwaram... Aayudham naakadi aaropraanam...
-
 Chorus: My Name is Billa, Thunder Billa... Naake edurochhi nilichedela... My Name is Billa, Thunder Billa... Panja guri pedithe thappedela...
-
-[English Verse] You are born to rule, Deadly Billa, Only Billa, You are born to rule. You are too cool to be. For Billa, Thunderilla, You are too cool...
-
-Manishini nammanu nenu... Manassunu vaadanu nenu... Mudo kanne kannu... Muppe raanivvanu... Maranam paine gelusthaa...
-
-Naa gatham ninnati thone khatham... Ee kshanam repo raade ranam...
-
+[English Verse] You are born to rule, Deadly Billa, Only Billa, You are born to rule. You are too cool to be. For Billa, Thunderilla, You are too cool... Manishini nammanu nenu... Manassunu vaadanu nenu... Mudo kanne kannu... Muppe raanivvanu... Maranam paine gelusthaa...Naa gatham ninnati thone khatham... Ee kshanam repo raade ranam...
 Chorus: My Name is Billa, Deadly Billa... Dooke Laava ni aapedelaa... My Name is Billa, Only Billa... Yepudem chesthano cheppedelaa...</p>
                 <h2><b>SHIVA SHANKAR KODURI</b></h2>
         </div>

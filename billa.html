@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billa (2009) - Movie Details</title>
+    <style>
+        :root {
+            --primary-red: #ff2222;
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-light: #ffffff;
+            --text-dim: #b3b3b3;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-red);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            border-left: 5px solid var(--primary-red);
+            padding-left: 15px;
+            margin: 40px 0 20px;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section with Flexbox */
+        .hero-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #333;
+        }
+
+        .hero-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary-red);
+        }
+
+        .stat-card h3 { margin: 0; color: var(--primary-red); font-size: 1.2rem; }
+        .stat-card p { margin: 5px 0 0; font-size: 1.1rem; font-weight: bold; }
+
+        /* Tables for Cast & Crew */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        th {
+            background-color: #252525;
+            color: var(--primary-red);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        tr:hover { background-color: #252525; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .hero-flex { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MY NAME IS BILLA</h1>
+        <p>A Stylized Action Thriller</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="hero-flex">
+            <div class="hero-image">
+                <img src="billa.jpg" alt="Billa 2009 Poster">
+            </div>
+            <div class="hero-info">
+                <h2 style="color: var(--primary-red); margin-top: 0;">Movie Overview</h2>
+                <p>
+                    <b>Billa</b> is a 2009 Indian Telugu-language action thriller film directed by <b>Meher Ramesh</b>. 
+                    It is a remake of the 1978 Hindi classic <i>Don</i> and follows an undercover mission where a thief from Andhra Pradesh replaces a dreaded 
+                    international gangster in Malaysia to infiltrate his mafia syndicate.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Release Date</h3>
+                        <p>3 April 2009</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Budget</h3>
+                        <p>₹12 - 25 Crore</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Box Office</h3>
+                        <p>est. ₹26 Crore</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Run Time</h3>
+                        <p>154 Minutes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Lead Cast</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Actor</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><b>Prabhas</b></td><td>David Billa / Ranga</td></tr>
+                <tr><td><b>Anushka Shetty</b></td><td>Maya</td></tr>
+                <tr><td><b>Krishnam Raju</b></td><td>ACP Krishnamurthy</td></tr>
+                <tr><td><b>Namitha</b></td><td>Lisa</td></tr>
+                <tr><td><b>Hansika Motwani</b></td><td>Priya (Cameo)</td></tr>
+                <tr><td><b>Rahman</b></td><td>Dharmendra / Devil</td></tr>
+                <tr><td><b>Kelly Dorjee</b></td><td>Rashid / Shethan</td></tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">Technical Crew</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><b>Director</b></td><td>Meher Ramesh</td></tr>
+                <tr><td><b>Music Director</b></td><td>Mani Sharma</td></tr>
+                <tr><td><b>Producer</b></td><td>D. Narendra Prabodh</td></tr>
+                <tr><td><b>Cinematography</b></td><td>Soundar Rajan</td></tr>
+                <tr><td><b>Editor</b></td><td>Marthand K. Venkatesh</td></tr>
+                <tr><td><b>Production Company</b></td><td>Gopi Krishna Movies</td></tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">Box Office & Collections</h2>
+        <p style="color: var(--text-dim);">
+            The film was a commercial success, particularly noted for its stylized presentation. In its full theatrical run, it earned a significant share across various regions in Andhra Pradesh and Telangana.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Region (Area)</th>
+                    <th>Estimated Share</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Ceded</td><td>₹ 2.54 Cr</td></tr>
+                <tr><td>Guntur</td><td>₹ 1.45 Cr</td></tr>
+                <tr><td>Uttarandhra</td><td>₹ 1.40 Cr</td></tr>
+                <tr><td>East Godavari</td><td>₹ 0.92 Cr</td></tr>
+                <tr><td><b>Total Worldwide (Estimated)</b></td><td><b>₹ 26 Crore (Gross)</b></td></tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <footer style="text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.9rem;">
+        &copy; 2025 Billa Fan Page | Designed for SHIVA SHANKAR KODURI
+    </footer>
+
+</body>
+</html>
